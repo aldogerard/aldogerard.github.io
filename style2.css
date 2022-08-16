@@ -1,0 +1,1168 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding: 4.37rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* ------------------ NAVBAR ------------------ */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #0b0d36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
+
+nav .navbar {
+    /* position: relative; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: #e50058; */
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.navbar .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a .fname {
+    color: #FCFCF0;
+}
+
+.logo a .lname {
+    color: #FEDA14;
+}
+
+/* AKHIR LOGO */
+
+
+/* List Navbar */
+
+.navbar .navlist {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: #969696; */
+}
+
+.navlist li a {
+    color: #FCFCF0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.navlist li a:hover {
+    color: #FEDA14;
+}
+
+/* Akhir List Navbar */
+
+/* Menu Toggle */
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -6px;
+    top: -5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #FCFCF0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+    -webkit-transform: rotate(45deg) translate(-1px, -1px);
+    -moz-transform: rotate(45deg) translate(-1px, -1px);
+    -ms-transform: rotate(45deg) translate(-1px, -1px);
+    -o-transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+    -webkit-transform: rotate(-45deg) translate(-1px, 0);
+    -moz-transform: rotate(-45deg) translate(-1px, 0);
+    -ms-transform: rotate(-45deg) translate(-1px, 0);
+    -o-transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+/* Akhir Menu Toggle */
+
+
+
+/* ------------------ AKHIR NAVBAR ------------------*/
+
+
+
+
+
+/* ------------------ Container Home  ------------------*/
+
+/* CONTAINER HOME */
+.container-home {
+    width: 100%;
+    height: 510px;
+    /* height: 80vh; */
+    margin-top: 70px;
+    background: linear-gradient(to bottom, #0b0d36, #181A43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-home .hero {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FCFCF0;
+}
+
+.hero .title {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h6,
+h1,
+h4,
+p {
+    padding-bottom: 15px;
+}
+
+.title h6 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 3px 2px #0b0d36, 8px 7px rgba(254, 219, 22, .5);
+}
+
+.title h4 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.title p {
+    font-weight: 400;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.title .btn {
+    color: #FCFCF0;
+    background-color: #E5C100;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 5600;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px #FCFCF0, 4px 4px #969696;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.title .btn:hover {
+    background-color: #CBA700;
+}
+
+/* ------------------ Akhir Container Home  ------------------*/
+
+
+
+
+
+/* ------------------ CONTAINER-ABOUT ------------------ */
+
+/* CONTAINER ABOUT */
+.container-about {
+    width: 100%;
+    min-height: 510px;
+    /* height: 80vh; */
+    background-color: #FCFCF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-about .about-me {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: teal; */
+}
+
+/* IMAGE */
+.about-me .image {
+    width: 50%;
+    height: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 6px 6px #FCFCF0, 12px 12px #181A43, -6px -6Px #FCFCF0, -12px -12px #FEDA14;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-right: 50px;
+}
+
+.image img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+
+/* AKHIR IMAGE */
+
+
+
+/* TEXT */
+
+.about-me .text {
+    width: 50%;
+    height: 70%;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: #181A43
+}
+
+.text .judul h3 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.text .judul h3 span {
+    color: #FEDA14;
+    font-weight: 600;
+}
+
+.text .isi p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* AKHIR TEXT */
+
+/* ------------------ AKHIR CONTAINER-ABOUT ------------------ */
+
+
+
+
+
+
+
+/* ------------------ CONTAINER PORTFOLIO ------------------ */
+
+/* CONTAINER PORTFOLIO */
+.container-portfolio {
+    width: 100%;
+    height: 570px;
+    /* height: 80vh; */
+    background-color: #F7F7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-portfolio .my-portfolio {
+    width: 80%;
+    height: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* judul */
+.my-portfolio .judul {
+    width: 100%;
+    height: 20%;
+    /* background-color: seagreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-portfolio .judul h3 {
+    font-size: 30px;
+    color: #FEDA14;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.my-portfolio .judul h3 span {
+    color: #181A43;
+    font-weight: 600;
+}
+
+.my-portfolio .judul hr {
+    width: 350px;
+    border: 2px solid #e50058;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* pict */
+.my-portfolio .pict-portfolio {
+    width: 100%;
+    height: 75%;
+    /* background-color: seagreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pict-portfolio .gbr {
+    width: 230px;
+    height: 230px;
+    margin-top: -70px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.pict-portfolio .gbr:hover {
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, .7);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* ------------------ AKHIR CONTAINER PORTFOLIO ------------------ */
+
+
+
+
+
+
+
+
+/* ------------------ CONTAINER RESUME ------------------ */
+
+/* CONTAINER RESUME */
+.container-resume {
+    width: 100%;
+    height: 570px;
+    /* height: 90vh; */
+    background-color: #FCFCF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-resume .my-resume {
+    width: 80%;
+    height: 100%;
+    /*background-color: teal; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-resume .hov {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+.my-resume .hov:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+}
+
+
+/* PROFILE */
+.my-resume .profil {
+    width: 40%;
+    height: 80%;
+    /* width: 400px; */
+    /* height: 450px; */
+    background-color: #F7F7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid #444; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
+}
+
+.my-resume .profil .judul {
+    width: 100%;
+    height: 25%;
+    /* background-color: #FCFCF0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil .judul h3 {
+    font-size: 35px;
+    color: #FEDA14;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.profil .judul h3 span {
+    color: #181A43;
+    font-weight: 600;
+}
+
+.profil .judul hr {
+    width: 380px;
+    color: #e50058;
+    border: 2px solid #e50058;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+/* SKILLS */
+.my-resume .skills {
+    width: 40%;
+    height: 80%;
+    /* width: 400px; */
+    /* height: 450px; */
+    background-color: #F7F7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
+}
+
+.my-resume .skills .judul {
+    width: 100%;
+    height: 25%;
+    /* background-color: #FCFCF0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .judul h3 {
+    font-size: 35px;
+    color: #FEDA14;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.skills .judul h3 span {
+    color: #181A43;
+    font-weight: 600;
+}
+
+.skills .judul hr {
+    width: 380px;
+    border: 2px solid #e50058;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* ------------------ AKHIR CONTAINER RESUME ------------------ */
+
+
+
+
+
+
+
+/* ------------------ CONTAINER CONTACT ------------------ */
+
+.container-contact {
+    width: 100%;
+    height: 470px;
+    /* height: 75vh; */
+    /* background-color: #FCFCF0; */
+    background-color: #F7F7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contact .contact-me {
+    width: 80%;
+    height: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.contact-me .judul {
+    width: 100%;
+    height: 20%;
+    /* background-color: #CBA700; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-me .judul h3 {
+    font-size: 30px;
+    color: #181A43;
+    font-weight: 500;
+    /* margin-bottom: 15px; */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contact-me .judul h3 span {
+    color: #FEDA14;
+    font-weight: 600;
+}
+
+
+/* CONTACT FORM */
+.contact-me .contact-form {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: #969696; */
+    justify-content: center;
+    /* background-color: yellowgreen; */
+    /* padding-bottom: 100px; */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    /* background-color: salmon; */
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* margin-top: -20px; */
+}
+
+form input,
+form textarea {
+    width: 470px;
+    color: #0b0d36;
+    background-color: #FCFCF0;
+    border: 1.5px solid #0b0d36;
+    padding: 15px;
+    /* margin-bottom: 10px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: inset -3px 3px 3px rgba(0, 0, 0, .4);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+@media screen and (max-width: 500px) {
+
+    form input,
+    form textarea {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form form {
+        justify-content: center;
+    }
+
+
+}
+
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #0b0d36;
+    font-family: 'Poppins';
+    font-size: .9em;
+}
+
+form textarea {
+    resize: none;
+    /* margin-bottom: 5px; */
+}
+
+form input:hover,
+form textarea:hover {
+    box-shadow: none;
+    transform: scale(1.009);
+    -webkit-transform: scale(1.009);
+    -moz-transform: scale(1.009);
+    -ms-transform: scale(1.009);
+    -o-transform: scale(1.009);
+}
+
+form input:focus,
+form textarea:focus {
+    border: none;
+}
+
+
+
+/* send btn */
+.contact-form form .btn-send {
+    color: #181A43;
+    width: 150px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #f1cd07;
+    font-size: 16px;
+    letter-spacing: 3px;
+    /* margin-top: 15px; */
+    font-weight: 5600;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+form .btn-send:hover {
+    background-color: #FEDA14;
+    border: 1px solid #181A43;
+}
+
+/* ------------------ AKHIR CONTAINER CONTACT ------------------ */
+
+
+
+
+
+/* ------------------ CONTAINER FOOTER ------------------ */
+
+.container-footer {
+    width: 100%;
+    height: 80px;
+    background-color: #181A43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer .footer {
+    width: 80%;
+    /* height: 100%;
+    background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    /* background-color: #0b0d36; */
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FCFCF0;
+}
+
+.footer p a {
+    color: #FEDA14;
+}
+
+
+
+/* ------------------ AKHIRCONTAINER FOOTER ------------------ */
+
+
+
+
+
+
+
+
+
+/* ------------------ RESPONSIVE ------------------ */
+
+
+/* ---- LAPTOP ---- */
+@media screen and (max-width: 1200px) {
+    .my-portfolio .pict-portfolio {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .pict-portfolio .gbr {
+        margin-top: 0px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .my-resume .profil,
+    .my-resume .skills {
+        width: 45%;
+        height: 80%;
+    }
+
+    .profil .judul hr,
+    .skills .judul hr {
+        width: 80%;
+    }
+
+
+
+    /*---- TABLET ----  */
+
+    @media screen and (max-width: 850px) {
+
+        /* NAVBAR */
+        nav .navbar {
+            width: 90%;
+        }
+
+        .navbar .navlist {
+            width: 70%;
+        }
+
+        /* MENU TOGGLE */
+        .menu-toggle {
+            display: flex;
+        }
+
+        .navlist li a {
+            color: #FCFCF0;
+            transition: .3s;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+        }
+
+        nav .navbar .navlist {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            margin-top: 70px;
+            top: 0;
+            right: 0;
+            padding-right: 30px;
+            box-sizing: border-box;
+            flex-direction: column;
+            background-color: #0b0d36;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            z-index: -99px;
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+            transition: all .7s;
+            -webkit-transition: all .7s;
+            -moz-transition: all .7s;
+            -ms-transition: all .7s;
+            -o-transition: all .7s;
+            opacity: 1;
+            border: 1px solid #FEDA14;
+            border-right: none;
+            border-top: none;
+
+        }
+
+        nav .navbar .navlist.slide {
+            opacity: 1;
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+
+        /* hero */
+        .container-home {
+            height: 650px;
+        }
+
+        /* ABOUT */
+        .container-about {
+            height: 650px;
+        }
+
+        .container-about .about-me {
+            width: 90%;
+            height: 100%;
+            /* background-color: #0b0d36; */
+            flex-direction: column;
+        }
+
+        .about-me .image {
+            width: 100%;
+        }
+
+        .about-me .image img {
+            justify-content: center;
+            width: 220px;
+            margin-right: 0;
+        }
+
+
+        .about-me .text {
+            width: 100%;
+            align-items: center;
+        }
+
+        .text .isi {
+            height: 100%;
+            /* background-color: #e50058; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .text .isi p {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .text .isi p:nth-child(1) {
+            padding-left: 0;
+        }
+
+        .text .isi p:nth-child(2) {
+            padding-right: 0;
+        }
+
+
+        /* RESUME */
+        .container-resume .my-resume {
+            width: 90%;
+            flex-direction: column;
+        }
+
+        .my-resume .profil,
+        .my-resume .skills {
+            width: 80%;
+            height: 40%;
+        }
+
+
+
+    }
+
+    /* HP */
+    @media screen and (max-width: 600px) {
+
+        /* HOME */
+
+        /* .container-home {
+            height: 70vh; 
+        } */
+
+        .container-home .hero {
+            width: 90%;
+            /* background-color: #e50058; */
+        }
+
+        .hero .title {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #969696; */
+        }
+
+        .title h1 {
+            font-size: 35px;
+        }
+
+        .title h4 {
+            font-size: 18px;
+        }
+
+        .title p {
+            /* display: none; */
+            font-size: 14px;
+            text-align: justify;
+            padding-right: 20px;
+            padding-left: 20px;
+            /* background-color: #0b0d36; */
+        }
+
+
+
+        /* ABOUT */
+        .about-me .image {
+            width: 100%;
+        }
+
+        .about-me .image img {
+            justify-content: center;
+            width: 200px;
+            margin-right: 0;
+        }
+
+        .about-me .text {
+            width: 100%;
+            /* background-color: #e50058; */
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text .judul {
+            margin-bottom: 10px;
+        }
+
+        .text .isi {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #0b0d36; */
+
+        }
+
+        .text .isi p {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+
+        .container-portfolio .my-portfolio {
+            width: 90%;
+        }
+
+        .my-portfolio .pict-portfolio {
+            /* background-color: #0b0d36; */
+            width: 100%;
+            height: 80%;
+            /* flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around; */
+        }
+
+        .pict-portfolio .gbr {
+            margin-top: 0px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .my-portfolio .judul hr {
+            width: 300px;
+        }
+
+
+
+
+        /* FORM */
+
+        .container-contact .contact-me {
+            width: 90%;
+        }
+
+        .contact-me .judul h3 {
+            margin-bottom: 0px;
+        }
+
+        form input,
+        form textarea {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            justify-content: center;
+        }
+
+
+    }
+
+    @media screen and (max-width: 370px) {
+        .container-footer .footer {
+            width: 90%;
+        }
+
+        .footer p {
+            flex-direction: column;
+        }
+
+    }
+
+    /* ------------------ AKHIR RESPONSIVE ------------------ */
